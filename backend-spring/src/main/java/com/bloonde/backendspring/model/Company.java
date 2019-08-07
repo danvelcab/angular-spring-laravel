@@ -21,6 +21,7 @@ public class Company {
     @Column(name = "phone")
     private String phone;
 
+
     public Integer getId() {
         return id;
     }
@@ -37,11 +38,27 @@ public class Company {
         this.name = name;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
     public String getEmail() {
         return email;
     }
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public City getCity() {
+        return city;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
     }
 }
