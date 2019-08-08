@@ -20,11 +20,11 @@ public class DBSeed implements ApplicationListener<ApplicationReadyEvent> {
     private ICompany companyRepository;
     @Override
     public void onApplicationEvent(final ApplicationReadyEvent event) {
-        this.companyRepository.deleteAll();
-        this.cityRepository.deleteAll();
-        CitySeed citySeed = new CitySeed();
-        List<City> cities = citySeed.seedCityTable(this.cityRepository);
-        CompanySeed companySeed = new CompanySeed();
-        companySeed.seedCompanyTable(this.companyRepository, this.cityRepository, cities);
+//        this.companyRepository.deleteAll();
+//        this.cityRepository.deleteAll();
+//        CitySeed citySeed = new CitySeed();
+//        List<City> cities = citySeed.seedCityTable(this.cityRepository);
+//        CompanySeed companySeed = new CompanySeed();
+//        companySeed.seedCompanyTable(this.companyRepository, this.cityRepository, cities);
     }
 }
