@@ -18,4 +18,11 @@
   </li>
 </ul>
 
+<ng-container *ngIf="companies && companies.length > 0">
+  <div *ngFor="let company of companies">
+    {{company.name}} - {{company.email}} - {{company.phone}}
+  </div>
+
+</ng-container>
+
 <router-outlet></router-outlet>

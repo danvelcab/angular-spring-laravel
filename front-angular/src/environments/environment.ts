@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  framework: 'none'
+  framework: 'none',
+  backendHost: null,
 };
 
 /*

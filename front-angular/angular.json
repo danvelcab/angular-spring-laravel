@@ -188,6 +188,41 @@
           }
         }
       }
+    },
+    "api-rest-core": {
+      "root": "projects/api-rest-core",
+      "sourceRoot": "projects/api-rest-core/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/api-rest-core/tsconfig.lib.json",
+            "project": "projects/api-rest-core/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/api-rest-core/src/test.ts",
+            "tsConfig": "projects/api-rest-core/tsconfig.spec.json",
+            "karmaConfig": "projects/api-rest-core/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/api-rest-core/tsconfig.lib.json",
+              "projects/api-rest-core/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "front-angular"

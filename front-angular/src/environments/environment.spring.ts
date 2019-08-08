@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  framework: 'spring'
+  framework: 'spring',
+  backendHost: 'http://localhost:8080/',
+
 };
 
 /*

@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  framework: 'laravel'
+  framework: 'laravel',
+  backendHost: 'http://localhost/angular-spring-laravel/backend-laravel/public/',
 };
 
 /*
