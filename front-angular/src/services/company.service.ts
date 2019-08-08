@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import { AbstractService } from '../../projects/api-rest-core/src/lib/services/abstract.service';
 import { HttpClient } from '@angular/common/http';
-import { ApiConfigHelper } from '../../projects/api-rest-core/src/lib/helpers/api-config.helper';
+import { AbstractService, ApiConfigHelper } from 'bl-api-rest-core';
 
 @Injectable({
   providedIn: 'root'

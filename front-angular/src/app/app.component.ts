@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { environment } from '../environments/environment';
 import { Company } from '../models/company';
 import { CompanyService } from '../services/company.service';
-import { ListRequestData } from '../../projects/api-rest-core/src/lib/helpers/list-request-data';
 import { CompanyListItem } from '../models/lists/company_list_item';
+import { ListRequestData } from 'bl-api-rest-core';
 
 @Component({
   selector: 'app-root',
