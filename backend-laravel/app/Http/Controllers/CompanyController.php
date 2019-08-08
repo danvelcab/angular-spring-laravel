@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class CompanyController extends Controller
 {
     public function index(){
-        return Company::all();
+        return response()->json(Company::all());
     }
 }
